@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Game {
+-parser : Parser
++Game()
+-welcome()
+-printHelp()
+-computerMove()
+-printWinner(int who)
+-printMoves(Move player, Move computer)
+-processMove(Move move)
++playGame()
++main()
+}
+
+class Move {
+-move : String
++Move()
++Move(String move)
++getMove()
++isUnknown()
++beats(Move other)
+}
+
+@enduml
