@@ -23,4 +23,30 @@ class Move {
 +beats(Move other)
 }
 
+class MoveWords {
++EMPATE : int
++GANA : int
++PIERDE : int
+-validMoves : String[]
+-validCommands : String[]
+-rnd : Random
++MoveWords()
++isValidMoveCommand(String value)
++randomMove()
++showMoves()
++showCommands()
++showWords()
+-getIndex(String value)
++checkWinner(String first, String second)
+}
+
+class Parser {
+-moves : MoveWords
+-reader : Scanner
++Parser()
++showCommands()
++newRandomMove()
++getMove()
+}
+
 @enduml
