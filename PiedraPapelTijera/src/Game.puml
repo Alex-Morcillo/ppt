@@ -1,6 +1,13 @@
 @startuml
 'https://plantuml.com/class-diagram
 
+MoveWords <|-- Move
+MoveWords <|-- Parser
+MoveWords <|--- Game
+Move <|- Parser
+Parser <|-- Game
+Move <|-- Game
+
 class Game {
 -parser : Parser
 +Game()
